@@ -1,4 +1,4 @@
-# Fidus Book Style - Manual001
+# Demo Style for Manuals
 
 A Book Style intended for upload to Fidus Writer.
 
