@@ -75,9 +75,11 @@
 .sidebar>h1 .app-name-link:hover{
   color: #000000;
 }
+
 .content strong {
     color: inherit;
 }
+
 /* Frontmatter*/
 .content .markdown-section div.titlepage {/*background-image: url("media/qr.png");
 background-position: bottom;
@@ -87,36 +89,13 @@ background-repeat: no-repeat;*/
   height: 100%;
   background-size: 25%;
 }
+
 .markdown-section h1.booktitle {
   margin:0;
   border: none;
   color: #000000;
 }
-.content .markdown-section .booktitle:before {
-  display: block;
-  text-transform: none;
-  counter-increment: chapter;
-  height: 3em;
-  background-image: linear-gradient(#EE717F,#EE717F);
-  background-repeat: no-repeat;
-  background-size: 80px 9px;
-  background-position: 0% 0%;
-  padding-top: 1em;
-  color: #000000;
-  content:"";
-  font-size: 18px;
-  font-weight: 300;
-}
-.content .markdown-section div.titlepage:after {
-  display: block;
-  height: 1em;
-  background-image: linear-gradient(#EE717F,#EE717F);
-  background-repeat: no-repeat;
-  background-size: 80px 9px;
-  background-position: 0% 0%;
-  margin-top: 1.5em;
-  content:"";
-}
+
 
 h4.bookversion {
   font-family: "Roboto Slab", sans-serif;
@@ -158,6 +137,19 @@ border: none;
 .content .markdown-section .booktitle, .content .markdown-section .titlepage {
   text-align: left;
 }
+
+div.titlepage:after {
+  content: "";
+  background: transparent url(media/GAF-Logo-30_CMYK-P709_lachs.png) 0 0 no-repeat;
+  display: none;
+  position: absolute;
+  right: -20mm;
+  top: -20mm;
+  height: 60%; /*add height of your image here*/ 
+  width: 40%; /*add width of your image here*/
+  z-index: 1;  
+}
+
 .markdown-section h1, .content .markdown-section .article-title {
     margin: var(--heading-h1-margin, var(--heading-margin));
     padding: var(--heading-h1-padding, var(--heading-padding));
